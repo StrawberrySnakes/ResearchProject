@@ -2,31 +2,43 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=divice-width, initial-scale: 1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Technology_In_Psychology_Homepage</title>
-        <link href="styles/styles.css" rel="Stylesheet">
+        <link href="styles/styles.css" rel="stylesheet">
     </head>
     <body>
         <header>
-            <nav>
-                <div class="topnav">
-                    <figure class="brain_icon">
-                        <a href="index.html"><img src="images/brain_icon.png" alt="Brain Icon"></a>
-                    </figure>
+            <div class="topnav">
+                <figure class="brain_icon">
+                    <a href="index.html"><img src="images/brain_icon.svg" alt="Brain Icon"></a>
+                  </figure>
+                  <nav class="links" id="navLinks">
                     <a href="history.html">History</a>
                     <a href="current.html">Current</a>
                     <a href="uses.html">Uses</a>
                     <a href="references.html">References</a>
                     <a href="contact.html">Contact</a>
-                </div>
-            </nav>
+                  </nav>
+                  <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                    <img src="images/Hamburger_icon_white.svg" alt="hamburger menu">
+                  </a>
+            </div>
         </header>
-        <main>
+        <main id="homepagecontent">
             <section>
-                <figure>
-                    <!--these images will likely be defined in css using a media query-->
-                    <img src="images/home1_img.jpg" alt="Technology Graphic">
-                    <img src="images/home2_img_p.jpg" alt="Interconnected Brains">
+                <div>
+
+                </div>
+                <figure> 
+                    <picture>
+                        <img src="images/home1_img.jpg" alt="Responsive Image" class="techG">
+
+                        <!-- Default image for larger screens -->
+                        <!-- <source media="(min-width: 400px)" srcset="images/home1_img.jpg" alt="Technology Graphic" class="techG"> -->
+                        <!-- Image for screens 650px and below -->
+                        <!-- <img src="images/home2_img_p.jpg" alt="Responsive Image" class="techG2"> -->
+                    <!-- these images will likely be defined in css using a media query -->
+                    <!-- <img alt="Technology Graphic"> -->
                 </figure>
                 <h1>Explore new and innovative Technology within the field of psychology</h1>
             </section>
@@ -49,5 +61,7 @@
         </footer>
 
     </body>
+
+    <script src="js/script.js"></script>
 
 </html>

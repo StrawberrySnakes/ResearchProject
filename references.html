@@ -2,47 +2,61 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=divice-width, initial-scale: 1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Technology_In_Psychology_References</title>
-        <link href="styles/styles.css" rel="Stylesheet">
+        <link href="styles/styles.css" rel="stylesheet">
     </head>
     <body>
         <header>
-            <nav>
-                <div class="topnav">
-                    <figure>
-                        <a href="index.html"><img src="images/brain_icon.png" alt="Brain Icon"></a>
-                    </figure>
+            <div class="topnav">
+                <figure class="brain_icon">
+                    <a href="index.html"><img src="images/brain_icon.svg" alt="Brain Icon"></a>
+                  </figure>
+                  <nav class="links" id="navLinks">
                     <a href="history.html">History</a>
                     <a href="current.html">Current</a>
                     <a href="uses.html">Uses</a>
                     <a href="references.html">References</a>
                     <a href="contact.html">Contact</a>
-                </div>
-            </nav>
+                  </nav>
+                  <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                    <img src="images/Hamburger_icon_white.svg" alt="hamburger menu">
+                  </a>
+            </div>
         </header>
-        <main>
-            <section>
-                <figure>
-                    <img src="images/ref_img.jpg" alt="Open Book"> <!--can alt use background-image in css-->
-                </figure>
-                <h1>References</h1> <!--Add vert line with borders-->
-            </section>
+        <main id="refcontent">
+            <picture class="mainimg">
+                <source media="(max-width: 650px)" srcset="images/ref_img_2.jpg">
+                <img src="images/ref_img.jpg" alt="Open Book" class="mainimgtag"> <!--can alt use background-image in css-->
+            </picture>
+            <h1 class="mainname">References</h1> <!--Add vert line with borders-->
 
             <div>
-                Fierro, C., Gallegos, M., Videla, C. B., & Pecanha, V. de C. (2019, November 28). Science and Technology Studies and the historiography of psychology: Towards a critical analysis. Trends in Psychology. https://www.scielo.br/j/tpsy/a/hqSFkpz9sNngmYm4dQF6QjQ/?lang=en <br>
+                <p>Fierro, C., Gallegos, M., Videla, C. B., & Pecanha, V. de C. (2019, November 28). Science and Technology Studies and the historiography of psychology: Towards a critical analysis. Trends in Psychology. https://www.scielo.br/j/tpsy/a/hqSFkpz9sNngmYm4dQF6QjQ/?lang=en <br></p>
 
-                Pickernell, S. (1440, January 1). Technological developments in psychology timeline. Timetoast timelines. https://www.timetoast.com/timelines/technological-developments-in-psychology<br>
+                <p>Pickernell, S. (1440, January 1). Technological developments in psychology timeline. Timetoast timelines. https://www.timetoast.com/timelines/technological-developments-in-psychology<br></p>
 
-                Abrams, Z. (2023, July). Ai is changing every aspect of psychology. here’s what to watch for. Monitor on Psychology. https://www.apa.org/monitor/2023/07/psychology-embracing-ai#:~:text=In%20psychology%20practice%2C%20artificial%20intelligence,aid%20in%20training%20new%20clinicians <br>
+                <p>Abrams, Z. (2023, July). Ai is changing every aspect of psychology. here’s what to watch for. Monitor on Psychology. https://www.apa.org/monitor/2023/07/psychology-embracing-ai#:~:text=In%20psychology%20practice%2C%20artificial<br>%20intelligence,aid%20in%20training%20new%20clinicians <br></p>
 
-                Byron, G., Strahm, A., Bagne, A., & Hilmert, C. (2023). Using virtual reality to study the impact of audience size on  cortisol responses to the Trier Social Stress Test. International Journal of Virtual Reality, 23(1), 1–16. https://doi.org/10.20870/ijvr.2023.23.1.7146<br>
+                <p>Byron, G., Strahm, A., Bagne, A., & Hilmert, C. (2023). Using virtual reality to study the impact of audience size on  cortisol responses to the Trier Social Stress Test. International Journal of Virtual Reality, 23(1), 1–16. https://doi.org/10.20870/ijvr.2023.23.1.7146<br></p>
 
-                Brooks, R. (2023, August 15). Emerging Technologies in Psychology. North Wales Management School - Wrexham University. https://online.glyndwr.ac.uk/emerging-technologies-in-psychology/<br>
+                <p>Brooks, R. (2023, August 15). Emerging Technologies in Psychology. North Wales Management School - Wrexham University. https://online.glyndwr.ac.uk/emerging-technologies-in-psychology/<br></p>
 
-                Yaden, D. B., Eichstaedt, J. C., & Medaglia, J. D. (2018). The Future of Technology in positive psychology: Methodological advances in the science of well-being. Frontiers in Psychology, 9. https://doi.org/10.3389/fpsyg.2018.00962<br>
+                <p>Yaden, D. B., Eichstaedt, J. C., & Medaglia, J. D. (2018). The Future of Technology in positive psychology: Methodological advances in the science of well-being. Frontiers in Psychology, 9. https://doi.org/10.3389/fpsyg.2018.00962<br></p>
 
-                See U in History. (2022). The Invention of the Printing Press - Historical Curiosities - See U in History. YouTube. Retrieved 2023, from https://www.youtube.com/watch?v=Bhbl0eDGmsA.<br>
+                <p>See U in History. (2022). The Invention of the Printing Press - Historical Curiosities - See U in History. YouTube. Retrieved 2023, from https://www.youtube.com/watch?v=Bhbl0eDGmsA.<br></p>
+
+                <p>Gungor, A. (2023, May 25). Explainable AI: Challenges And Opportunities In Developing Transparent Machine Learning Models. Bernard Marr. https://bernardmarr.com/explainable-ai-challenges-and-opportunities-in-developing-transparent-machine-learning-models/ <br></p>
+
+                <p>Large Scientific Collaborations Aim to Complete Human Genome. (n.d.). The Scientist Magazine®. https://www.the-scientist.com/features/large-scientific-collaborations-aim-to-complete-human-genome-70423 <br></p>
+
+                <p>Medicine, N. (n.d.). Better Mental Health With Magnetic Stimulation Therapy. Northwestern Medicine. Retrieved November 16, 2023, from https://www.nm.org/healthbeat/medical-advances/new-therapies-and-drug-trials/Better-Mental-Health-With-Magnetic-Stimulation-Therapy <br></p>
+
+                <p>Nagarajan, M. (2019, February 22). How Does the Internet Work? Medium. https://medium.com/@itIsMadhavan/how-does-the-internet-work-b88c5a000d64 <br></p>
+
+                <p>Search media - Wikimedia Commons. (n.d.). Commons.wikimedia.org. Retrieved November 16, 2023, from https://commons.wikimedia.org/w/index.php?search=phone+icon&title=Special:MediaSearch&go=Go&type=image <br></p>
+
+                <p>Sleek, S. (2021). On the Right Side of Being Wrong: the Emerging Culture of Research Transparency. APS Observer, 35. https://www.psychologicalscience.org/observer/right-side-of-wrong <br></p>
 
             </div>
         </main>
@@ -54,5 +68,6 @@
         </footer>
 
     </body>
+    <script src="js/script.js"></script>
 
 </html>

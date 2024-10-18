@@ -2,42 +2,51 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=divice-width, initial-scale: 1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Technology_In_Psychology_Uses</title>
-        <link href="styles/styles.css" rel="Stylesheet">
+        <link href="styles/styles.css" rel="stylesheet">
     </head>
     <body>
         <header>
-            <nav>
-                <div class="topnav">
-                    <figure>
-                        <a href="index.html"><img src="images/brain_icon.png" alt="Brain Icon"></a>
-                    </figure>
+            <div class="topnav">
+                <figure class="brain_icon">
+                    <a href="index.html"><img src="images/brain_icon.svg" alt="Brain Icon"></a>
+                  </figure>
+                  <nav class="links" id="navLinks">
                     <a href="history.html">History</a>
                     <a href="current.html">Current</a>
                     <a href="uses.html">Uses</a>
                     <a href="references.html">References</a>
                     <a href="contact.html">Contact</a>
-                </div>
-            </nav>
+                  </nav>
+                  <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                    <img src="images/Hamburger_icon_white.svg" alt="hamburger menu">
+                  </a>
+            </div>
         </header>
-        <main>
+        <main id="usescontent">
             <section>
-                <figure>
-                    <img src="images/uses1_img.jpg" alt="Computer and Technology"> <!--can alt use background-image in css-->
-                </figure>
-                <h1>Current & Future Uses</h1> <!--Add vert line with borders-->
-
+                <picture class="mainimg">
+                    <source media="(max-width: 650px)" srcset="images/uses1_img_2.png">
+                    <img src="images/uses1_img.png" alt="Computer and Technology" class="mainimgtag" id="usesimg"> <!--can alt use background-image in css-->
+                </picture>
+                <h1 id="usesmainname" class="mainname">Current & Future Uses</h1> <!--Add vert line with borders-->
             </section>
 
-            <article>
-                <section>
-                    <figure>
-                        <video src=""></video>
-                    </figure>
-                    <p>In modern day technology plays a big role in humans everyday lives, technology impacts every aspect of modern life. Most people use technology practically unconsciously in their daily lives. As technology continues to grow, people's dependence on technology to support their bodies and minds increases synchronously.</p>
-                </section>
+            <div id="usesdiv1">
+                
+                <p>In modern day technology plays a big role in humans everyday lives, technology impacts every aspect of modern life. Most people use technology practically unconsciously in their daily lives. As technology continues to grow, people's dependence on technology to support their bodies and minds increases synchronously.</p>
+                <figure>
+                    <!-- frameborder="0" -->
+                    <iframe src="https://www.youtube.com/embed/z3TJPyHqadY?si=F-0Xs6nN4fIeoZrj" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </figure>
+            
+            </div>
 
+            <div id="usesdiv2">
+                <figure>
+                    <img src="images/uses2_img.jpeg" alt="Women researcher graphic" width="100%">
+                </figure>
                 <section>
                     <h2>Technology in Psychological Treatments:</h2>
                     <p>Digital technology has revolutionized psychological treatments, especially in the context of the COVID-19 pandemic. Here are some alternative forms of treatment:</p>
@@ -50,22 +59,17 @@
                     </ul>
                     <p>Technology continues to shape the landscape of psychology, offering innovative solutions for understanding and improving mental health and well-being.</p>
                 </section>
+            </div>
 
-            </article>
+            
 
             <article>
-                <section>
-                    <h1>Future Uses</h1>
-                    <figure>
-                        <img src="" alt="">
-                    </figure>
-                </section>
 
                 <section>
                     <p>Advances in biotechnology and information technology are on the cusp of revolutionizing well-being research. This article explores the technologies poised to profoundly affect both the measurement and intervention aspects of positive psychology over the next decade. These technologies encompass</p>
                     <ul>
                         <li><span>Big data analysis:</span> This technology can be used to collect and analyze large amounts of data on well-being, which could lead to new insights into the factors that influence well-being and how to intervene effectively.</li>
-                        <li><span>Non-invasive brain stimulation:</span></li> This technology can be used to stimulate or inhibit specific areas of the brain, which could be used to improve cognitive function, reduce stress, and enhance well-being.
+                        <li><span>Non-invasive brain stimulation:</span>This technology can be used to stimulate or inhibit specific areas of the brain, which could be used to improve cognitive function, reduce stress, and enhance well-being.</li>
                         <li><span>Psychopharmacology:</span> This field of medicine is developing new drugs that could be used to treat mental disorders and promote well-being.
                         </li>
                     </ul>
@@ -79,8 +83,9 @@
                 </section>
 
                 <section>
+                    <h1>Future Uses</h1>
                     <figure>
-                        <img src="" alt="">
+                        <img src="images/uses3_img.jpeg" alt="Steps of predictive algorithm" id="uses4">
                         <figcaption></figcaption>
                     </figure>
                     <h2>The Rise of Predictive Algorithms</h2>
@@ -109,10 +114,11 @@
                 </section>
 
                 <section>
-                    <figure>
-                        <img src="" alt="">
+                    <figure id="uses5">
+                        <img src="images/uses4_img.jpeg" alt="Non-Invasive Brain Stimulation" width="100%">
+                        <figcaption>Medicine, N. (n.d.). Better Mental Health With Magnetic Stimulation Therapy. Northwestern Medicine. Retrieved November 16, 2023, from https://www.nm.org/healthbeat/medical-advances/new-therapies-and-drug-trials/Better-Mental-Health-With-Magnetic-Stimulation-Therapy</figcaption>
                     </figure>
-                    <h2>Non-Invasive Brain Stimulation for Well-Being</h2>
+                    <h3>Non-Invasive Brain Stimulation for Well-Being</h3>
                     <p>
                         Non-invasive brain stimulation (NIBS) is a rapidly growing field of research with the potential to revolutionize the way we treat mental disorders and enhance well-being. NIBS techniques involve stimulating the brain through the skull without the need for surgery.
                         Two of the most common NIBS techniques are transcranial magnetic stimulation (TMS) and transcranial direct current stimulation (tDCS). TMS uses magnetic pulses to stimulate neurons in the brain, while tDCS uses a weak electrical current to modulate the excitability of neurons.
@@ -150,5 +156,6 @@
         </footer>
 
     </body>
+    <script src="js/script.js"></script>
 
 </html>

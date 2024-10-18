@@ -2,44 +2,53 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=divice-width, initial-scale: 1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Technology_In_Psychology_Contact</title>
-        <link href="styles/styles.css" rel="Stylesheet">
+        <link href="styles/styles.css" rel="stylesheet">
     </head>
     <body>
         <header>
-            <nav>
-                <div class="topnav">
-                    <figure>
-                        <a href="index.html"><img src="images/brain_icon.png" alt="Brain Icon"></a>
-                    </figure>
+            <div class="topnav">
+                <figure class="brain_icon">
+                    <a href="index.html"><img src="images/brain_icon.svg" alt="Brain Icon"></a>
+                  </figure>
+                  <nav class="links" id="navLinks">
                     <a href="history.html">History</a>
                     <a href="current.html">Current</a>
                     <a href="uses.html">Uses</a>
                     <a href="references.html">References</a>
                     <a href="contact.html">Contact</a>
-                </div>
-            </nav>
+                  </nav>
+                  <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                    <img src="images/Hamburger_icon_white.svg" alt="hamburger menu">
+                  </a>
+            </div>
         </header>
 
-        <main>
-            <section>
+        <main id="contactcontent">
+            <section class="mainimg" id="mainimgcontact">
                 <h1>Get in Touch</h1>
                 <h3>We’d love to here any question, comments, or updates</h3> <!--Add vert line with borders-->
             </section>
 
-            <section>
+            <section id="contactus">
                 <h2>Contact Us</h2>
-                <img src="..." alt="Phone Icon">
-                <p>555-555-5555</p>
-                <img src="..." alt="Email Icon">
-                <p>ABC1234@gmail.com</p>
-                <img src="..." alt="Fax Icon">
-                <p>555-555-5555</p>
-            </section>
-            <section>
+                <ul>
+                    <li><img src="images/phone_icon.png" alt="Phone Icon" width="25%"></li>
+                    <li><p>- 555-555-5555</p></li>
+                </ul>
+                <ul>
+                    <li><img src="images/email_icon.png" alt="Email Icon" width="25%"></li>
+                    <li><p>- ABC1234@gmail.com</p></li>
+                </ul>
+                <ul>
+                    <li><img src="images/fax_icon.png" alt="Fax Icon" width="25%"></li>
+                    <li><p>- 555-555-5555</p></li>
+                </ul>
+            </section>  
+            <section id="beupdated">
                 <h2>Be Updated</h2>
-                <form method="POST">
+                <form method="POST" id="form">
                     <div>
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
@@ -67,5 +76,6 @@
         
 
     </body>
+    <script src="js/script.js"></script>
 
 </html>
